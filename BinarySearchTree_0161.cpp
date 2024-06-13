@@ -22,8 +22,10 @@ class BinaryTree
 public:
 	Node * ROOT;
 
-	  BinaryTree
-	  {
-		  ROOT =
+	BinaryTree()
+	{
+		ROOT = nullptr; // Initializing ROOT to null
 	  }
+
+	void insert(string element)
 };
