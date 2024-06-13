@@ -90,5 +90,26 @@ public:
 			cout << "Tree is empty" << endl;
 			return;
 		}
+		if (ptr != nullptr)
+		{
+			cout << ptr->info << " ";
+			preorder(ptr->leftchild);
+			preorder(ptr->rightchild);
+		}
+	}
+	void postorder(Node* ptr)
+	{
+		// performs the postorder traversal of the tree
+		if (ROOT == nullptr)
+		{
+			cout << "Tree is empty" << endl;
+			return;
+		}
+		if (ptr != nullptr)
+		{
+			postorder(ptr->leftchild);
+			postorder(ptr->rightchild);
+			cout << ptr->info << " ";
+		}
 	}
 };
