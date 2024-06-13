@@ -28,4 +28,7 @@ public:
 	  }
 
 	void insert(string element)
+	{
+		Node* newnode = new Node(element, nullptr, nullptr);
+	}
 };
