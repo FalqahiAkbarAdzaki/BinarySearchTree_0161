@@ -19,7 +19,7 @@ public:
 };
 class BinaryTree
 {
-public: |
+public:|
 	Node * ROOT;
 
 	  BinaryTree
