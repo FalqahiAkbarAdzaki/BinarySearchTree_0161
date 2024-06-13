@@ -29,11 +29,12 @@ public:
 
 	void insert(string element)
 	{
-		Node* newnode = new Node(element, nullptr, nullptr); //Alloctae memory for the new node
+		Node* newNode = new Node(element, nullptr, nullptr); //Alloctae memory for the new node
 		newNode->info = element; // Assign value to the data Field of the new node
 		newNode->leftchild = nullptr; // Make the left child of the new node point to the null
-		newnode->rightchild = nullptr; // Make the right child of the new node point to the null
+		newNode->rightchild = nullptr; // Make the right child of the new node point to the null
 
-
+		Node* parent = nullptr;
+		Node* currentNode = nullptr;
 	}
 };
