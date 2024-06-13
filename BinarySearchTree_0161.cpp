@@ -29,6 +29,7 @@ public:
 
 	void insert(string element)
 	{
-		Node* newnode = new Node(element, nullptr, nullptr);
+		Node* newnode = new Node(element, nullptr, nullptr); //Alloctae memory for the new node
+		newNode->info = element; // Assign value to the data Field of the new node
 	}
 };
